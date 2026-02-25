@@ -1,0 +1,22 @@
+name: Build and Deploy FastAPI App to Azure WebApp
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout GitHub repo
+      uses: actions/checkout@v3
+
+    - name: Deploy to Azure WebApp (Docker Hub image)
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: mlops-api-pj-app   # exact Azure WebApp name
+        publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE }}
+        images: 'poojaagee/mlops-api-repo-pj:latest'
