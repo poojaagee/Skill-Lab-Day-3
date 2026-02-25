@@ -74,7 +74,12 @@ Maintained structured project files.
 Included .github/workflows for automation (CI/CD readiness).
 Used .dvcignore to manage data versioning efficiently.
 
+FASTAPI INPUT
 
 ![FAST API INPUT](https://github.com/poojaagee/Skill-Lab-Day-3/blob/main/FAST%20API%20INPUT.jpg?raw=true)
+
+FASTAPI OUTPUT
+
+![FAST API OUTPUT](https://github.com/poojaagee/Skill-Lab-Day-3/blob/main/FAST%20API%20OUTPUT.jpg?raw=true)
 
 
